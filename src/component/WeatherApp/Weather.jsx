@@ -6,7 +6,6 @@ import backGroundClouds from "../../image/bg-blueSky.jpg";
 import backGroundMist from "../../image/bg-mist.jpg";
 import backGroundHome from "../../image/bg-simp.jpeg";
 import backGround404 from "../../image/bg-404.jpg";
-import { data } from "autoprefixer";
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState([]);
@@ -65,10 +64,6 @@ const Weather = () => {
     : {
         backgroundImage: `url(${backGroundHome})`,
       };
-
-  console.log(weatherState, "weatherState");
-
-  console.log(error);
 
   const handleChange = (e) => {
     let name = e.target.name;
