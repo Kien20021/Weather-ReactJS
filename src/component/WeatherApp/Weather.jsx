@@ -81,7 +81,7 @@ const Weather = () => {
 
   return (
     <div className="section-weather" style={backgroundStyle}>
-      <div className="flex justify-center items-center mt-[80px]  min-h-screen ">
+      <div className="flex justify-center items-center   min-h-screen ">
         <div className="bg-rgba[255,255,255,0.5] p-8 rounded-2xl shadow-xl transition-all duration-500 w-[400px] text-gray-700">
           <h1 className="text-3xl font-bold  text-center mb-5">
             Dự báo thời tiết
