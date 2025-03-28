@@ -6,6 +6,7 @@ import backGroundClouds from "../../image/bg-blueSky.jpg";
 import backGroundMist from "../../image/bg-mist.jpg";
 import backGroundHome from "../../image/bg-simp.jpeg";
 import backGround404 from "../../image/bg-404.jpg";
+import API_KEY from "../../service/ApiKey";
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState([]);
@@ -21,7 +22,7 @@ const Weather = () => {
       alert("nhap TP");
     } else {
       const data = await fetch(
-        `https://api.openweathermap.org/data/2.5/weather?appid=02ac31aab528819053457737dd81930f&q=${form.city}&lang=vi&units=metric`
+        `https://api.openweathermap.org/data/2.5/weather?appid=${API_KEY}&q=${form.city}&lang=vi&units=metric`
       )
         .then((res) => res.json())
         .then((data) => {
